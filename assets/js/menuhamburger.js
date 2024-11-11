@@ -2,28 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
   const menuToggle = document.getElementById('menuToggle');
   const navbarCollapse = document.getElementById('navbarNav');
 
-  // Função para alternar o estado do menu com animação
+  // Função para alternar o estado do menu
   function toggleMenu() {
-    const isExpanded = navbarCollapse.classList.contains('show');
-    
-    // Inicia a animação
-    navbarCollapse.style.transition = 'transform 0.3s ease-in-out';
-    navbarCollapse.style.transform = isExpanded ? 'translateX(100%)' : 'translateX(0)';
-    
-    // Aguarda a animação terminar antes de alterar as classes
-    setTimeout(() => {
-      menuToggle.classList.toggle('active');
-      navbarCollapse.classList.toggle('show');
-      
-      // Atualiza o atributo aria-expanded para acessibilidade
-      menuToggle.setAttribute('aria-expanded', !isExpanded);
-      
-      // Adiciona/remove classe no body para prevenir scroll quando o menu está aberto
-      document.body.classList.toggle('menu-open', !isExpanded);
-      
-      // Reseta a propriedade transform após a animação
-      navbarCollapse.style.transform = '';
-    }, 300); // Tempo da animação
+    navbarCollapse.classList.toggle('show');
+
+    // Atualiza o atributo aria-expanded para acessibilidade
+    menuToggle.setAttribute('aria-expanded', navbarCollapse.classList.contains('show'));
+
+    // Adiciona/remove classe no body para prevenir scroll quando o menu está aberto
+    document.body.classList.toggle('menu-open', navbarCollapse.classList.contains('show'));
   }
 
   // Evento de clique no botão do menu
