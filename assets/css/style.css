@@ -528,7 +528,7 @@ video {
   --slider-height: 750px;
   --slider-border-radius: 200px;
   --slider-overlay-color: rgba(28, 28, 28, 0.7);
-  --slider-title-size: 54px;
+  --slider-title-size: 47px;
   --slider-text-size: 26px;
   --slider-text-max-width: 550px;
 }
@@ -774,8 +774,7 @@ video {
   color: var(--color-text);
   font-size: var(--description-font-size);
   line-height: 1.6;
-  text-align: justify;
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -1263,7 +1262,7 @@ video {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
   .navbar-brand img {
-    height: 80px;
+    height: 100px;
     /* Ajuste o tamanho do logo para telas menores */
   }
 
@@ -1285,7 +1284,7 @@ video {
     width: 24px;
     height: 2px;
     background-color: var(--color-primary);
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
   }
 
   .navbar-toggler-icon::before,
@@ -1295,31 +1294,19 @@ video {
     width: 100%;
     height: 100%;
     background-color: var(--color-primary);
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .navbar-toggler-icon::before {
     top: -6px;
   }
+  
 
   .navbar-toggler-icon::after {
     bottom: -6px;
   }
 
-  .navbar-toggler.active .navbar-toggler-icon {
-    background-color: transparent;
-  }
-
-  .navbar-toggler.active .navbar-toggler-icon::before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .navbar-toggler.active .navbar-toggler-icon::after {
-    bottom: 0;
-    transform: rotate(-45deg);
-  }
-
+ 
   /* Menu lateral otimizado e criativo */
   .navbar-collapse {
     display: block;
@@ -1420,13 +1407,13 @@ video {
 
   /* Ajustes no conteúdo para melhor responsividade */
   .single_slider {
-    height: 500px;
+    height: 660px;
     /* Reduzido para melhor ajuste em telas menores */
     border-bottom-left-radius: 60px;
   }
 
   .slider_content {
-    padding-top: 80px;
+    padding-top: 60px;
   }
 
   .slider_content .slider_title {
@@ -1435,8 +1422,11 @@ video {
   }
 
   .slider_content p {
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 15px;
+  }
+  .services_area {
+    height: 44vh;
   }
 
   .main-btn {
@@ -1446,6 +1436,12 @@ video {
   }
 
   /* Ajustes adicionais para melhorar a responsividade */
+  .about_image{
+    width:400px;
+  }
+  .about_area {
+    padding: 0px;
+  }
   .section_title .title {
     font-size: 24px;
   }
@@ -1465,40 +1461,25 @@ video {
   .single_services .services_content .title {
     font-size: 20px;
   }
-
-  .footer_area {
-    border-top-left-radius: 40px;
+  .faq_area {
+    height: 52vh;
+  }
+  .brand_logo_area {
+    height: 80vh;
   }
 
-  /* Ajustes no footer para dispositivos móveis */
-  .footer_widget {
-    padding: 30px 0;
-  }
-
-  .footer_content {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer_logo img {
-    height: 80px;
-    margin-bottom: 20px;
-  }
-
-  .footer_links {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .footer_link_group {
-    margin: 10px 0;
-    text-align: center;
-  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .slider_content {
+    padding-top: 0;
+  }
   .slider_content .slider_title {
-    font-size: 40px;
+    font-size: 24px;
+    margin-top: 120px;
+  }
+  .slider_content p {
+    font-size: 20px;
   }
 
   .footer_link_wrapper .footer_link {
@@ -1516,5 +1497,16 @@ video {
 
   .single_info .info_content p {
     font-size: 16px;
+  }
+  .single_slider {
+    height: 620px;
+    /* Reduzido para melhor ajuste em telas menores */
+    border-bottom-left-radius: 60px;
+  }
+  .services_area {
+    padding: 40px;
+  }
+  .section_title .title {
+    font-size: 26px;
   }
 }
