@@ -2390,3 +2390,497 @@ video {
   }
 
 }
+
+@media  screen and (min-width: 375px) and (max-width: 424px) {
+  .single_slider {
+    height: 580px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .slider_content .slider_title {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .slider_content p {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .main-btn {
+    padding: 0 25px;
+    font-size: 14px;
+    line-height: 40px;
+    position: relative;
+  }
+
+  .navbar-brand img {
+    width: 15rem;
+    position: relative;
+    left: 3rem;
+    top: 0.7rem;
+  }
+
+  /* Menu hambúrguer aprimorado */
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar-toggler-icon {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease;
+    display: block;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -8px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 8px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top:  0;
+    left: 74.5%;
+    width: 30%;
+    background-color:  #1c1c1cc9;
+    padding: 0 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 15px 0;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 20px;
+    color: var(--color-text);
+  }
+
+  .navbar-nav .nav-item a:hover,
+  .navbar-nav .nav-item a:focus {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+  }
+
+  .navbar-nav .nav-item.active a {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .navbar-collapse.show .nav-item {
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: calc(0.1s * var(--item-index));
+  }
+
+  .services_area {
+    height: 34vh;
+    padding: 0px;
+  }
+
+  .services_container {
+    padding-top: 40px;
+  }
+
+  .section_title_container {
+    padding: 0px;
+  }
+
+  .section_title .title {
+    font-size: 13.5px;
+  }
+
+  .single_services .services_content .title {
+    font-size: 12px;
+  }
+
+  .single_services .services_content p {
+    font-size: 10px;
+  }
+
+  .about_area {
+    padding: 0px;
+    
+  }
+
+  .about_image {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about_image img {
+    width: 70%;
+  }
+
+  .about_content {
+    padding: 60px;
+  }
+
+  .about_content .main_title {
+    font-size: 20px;
+  }
+  .about_content .sub_title  span {
+    font-size: 44px;
+  }
+
+  .about_content p {
+    font-size: 14px;
+  }
+
+  .features_area {
+    padding: 0px;
+  }
+
+  .features_container {
+    padding: 0px;
+  }
+
+  .features_content {
+    padding: 20px;
+  }
+
+  .features_container .features_title {
+    font-size: 24px;
+  }
+
+  .faq_area {
+    padding: 10px;
+  }
+
+  .faq_area .main_title {
+    font-size: 20px;
+  }
+   .faq_button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .footer_area {
+    padding: 20px;
+  }
+  
+  .footer_logo img {
+    display: none;
+  }
+
+  .brand_logo_area {
+    display: none;
+  }
+
+  .contact_area {
+    padding: 0px;
+  }
+
+  .contact_container {
+    padding: 0px;
+  }
+
+
+  .contact_area {
+    padding: 0px;
+    font-size: 14px;
+  }
+
+}
+@media  screen and (min-width: 320px) and (max-width: 374px) {
+   .header_navbar {
+    padding: 0px;
+    height: 80px;
+   }
+
+
+  .single_slider {
+    height: 430px;
+    border-bottom-left-radius: 60px;
+  }
+
+  .slider_content .slider_title {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  .slider_content p {
+    font-size: 12px;
+    
+  }
+
+  .main-btn {
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 35px;
+    position: relative;
+  }
+
+  .navbar-brand img {
+    width: 10rem;
+    position: relative;
+    left: 3rem;
+    bottom: 0.7rem;
+  }
+
+  /* Menu hambúrguer aprimorado */
+  .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+
+  .navbar-toggler-icon {
+    position: relative;
+    width: 15px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease;
+    display: block;
+    bottom: 1rem;
+    right: 0.5rem;
+  }
+
+  .navbar-toggler-icon::before,
+  .navbar-toggler-icon::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-toggler-icon::before {
+    top: -6px;
+  }
+
+  .navbar-toggler-icon::after {
+    top: 6px;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-color: transparent;
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top:  0;
+    left: 74.5%;
+    width: 30%;
+    background-color:  #1c1c1cc9;
+    padding: 0 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    transform: translateX(0);
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 15px 0;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 18px;
+    color: var(--color-text);
+  }
+
+  .navbar-nav .nav-item a:hover,
+  .navbar-nav .nav-item a:focus {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+  }
+
+  .navbar-nav .nav-item.active a {
+    color: var(--color-primary);
+    font-weight: 700;
+  }
+
+  .navbar-collapse.show .nav-item {
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: calc(0.1s * var(--item-index));
+  }
+
+  .services_area {
+    height: 26vh;
+    padding: 0px;
+  }
+
+  .services_container {
+    padding-top: 20px;
+  }
+
+  .section_title_container {
+    padding: 0px;
+  }
+
+  .section_title .title {
+    font-size: 18px;
+  }
+
+  .single_services .services_content .title {
+    font-size: 10px;
+  }
+
+  .single_services .services_content p {
+    font-size: 8px;
+  }
+
+  .about_area {
+    padding: 0px;
+    
+  }
+
+  .about_image {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .about_image img {
+    width: 70%;
+  }
+
+  .about_content {
+    padding: 40px;
+  }
+
+  .about_content .main_title {
+    font-size: 16px;
+  }
+  .about_content .sub_title  span {
+    font-size: 36px;
+  }
+  .about_content .sub_title h3 {
+    font-size: 20px;
+  }
+  .about_content p {
+    font-size: 13px;
+  }
+
+  .features_area {
+    padding: 0px;
+  }
+
+  .features_container {
+    padding: 0px;
+  }
+
+  .features_content {
+    padding: 20px;
+  }
+
+  .features_container .features_title {
+    font-size: 20px;
+  }
+
+  .features_container p {
+    font-size: 13px;
+  }
+
+ 
+  .faq_button {
+    padding: 26px;
+    font-size: 12px;
+  }
+
+  .faq_button::after {
+    font-size: 18px;
+    
+  }
+
+  .footer_area {
+    padding: 0px;
+
+  }
+
+  .footer_container {
+    padding: 0px;
+    
+  }
+
+  .footer_content {
+    padding: 0px;
+    position: relative;
+    right: 20px;
+  } 
+
+  .footer_content p {
+    font-size: 10px;
+  }
+  
+  .footer_logo img {
+    display: none;
+  }
+
+  .brand_logo_area {
+    display: none;
+  }
+
+  .contact_area {
+    padding: 0px;
+  }
+
+  .contact_container {
+    padding: 0px;
+  }
+
+
+  .contact_area {
+    padding: 0px;
+    font-size: 10px;
+  }
+
+}
