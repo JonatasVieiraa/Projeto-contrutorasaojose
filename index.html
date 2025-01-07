@@ -201,7 +201,7 @@
                             Oferecemos suporte completo, desde o financiamento bancário até a entrega do projeto
                             final, com uma equipe qualificada e comprometida com a excelência.
                         </p>
-                       
+
                     </div>
                 </div>
             </div>
@@ -486,7 +486,8 @@
                         <div class="section_title pb-25">
                             <h4 class="title">Entre em Contato</h4>
                         </div>
-                        <form id="contact-form" action="https://formspree.io/f/seu_formulario_id" method="POST">
+                        <!-- HTML do Formulário -->
+                        <form id="contact-form">
                             <div class="single_form">
                                 <input name="name" type="text" placeholder="Nome" required>
                             </div>
@@ -503,8 +504,10 @@
                                 <textarea name="message" placeholder="Mensagem" required></textarea>
                             </div>
                             <div class="single_form">
-                                <button class="main-btn gold-btn-shimmer">ENVIAR MENSAGEM</button>
+                                <button type="submit" class="main-btn gold-btn-shimmer">ENVIAR MENSAGEM</button>
                             </div>
+                            <!-- Div para mensagens de status -->
+                            <div id="form-status"></div>
                         </form>
                     </div>
                 </div>
@@ -519,7 +522,7 @@
                                 <img src="assets/images/telefone.svg" alt="telefone">
                             </div>
                             <div class="info_content media-body">
-                                <p>Numero Telefone</p>
+                                <p>(15) 99119-6779 </p>
                             </div>
                         </div>
                         <div class="single_info d-flex align-items-center">
@@ -576,9 +579,9 @@
                         <div class="footer_link_group">
                             <h4 class="footer_title">Redes Sociais</h4>
                             <ul class="link">
-                                <li><a href="#">Facebook</a></li>
-                                <li><a href="#">Instagram</a></li>
-                                <li><a href="#">Whatsapp</a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=61553789436549">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/construsaojose/">Instagram</a></li>
+                                <li><a href="https://wa.me/5515991196779">Whatsapp</a></li>
                             </ul>
                         </div>
                     </div>
@@ -586,11 +589,23 @@
             </div>
         </div>
     </footer>
+    <style>
+        #form-status .success {
+            color: green;
+            margin-top: 10px;
+        }
+        #form-status .error {
+            color: red;
+            margin-top: 10px;
+        }
+    </style>
     <!-- Back to Top Button -->
     <a href="#" class="back-to-top"><img src="assets/images/seta.svg" alt="seta"><a>
 
             <!-- JavaScript -->
-            <script src="assets/js/forms.js"></script>
+            <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js"></script>
+            <script type="module" src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js"></script>
+            <script type="module" src="assets/js/forms.js"></script>
             <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
             <script src="assets/js/bootstrap.min.js"></script>
             <script src="assets/js/jquery.easing.min.js"></script>
@@ -598,7 +613,6 @@
             <script src="assets/js/main.js"></script>
             <script src="assets/js/carrosel.js"></script>
             <script src="assets/js/menuhamburger.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
             <script src="assets/js/circle.js"></script>
             <script src="assets/js/faq.js"></script>
 </body>
