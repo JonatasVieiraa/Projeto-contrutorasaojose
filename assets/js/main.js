@@ -78,17 +78,4 @@ $(function() {
         }, 1500);
     });
 
-
-    //=====  WOW active
-
-    var wow = new WOW({
-        boxClass: 'wow', //
-        mobile: false, // 
-    })
-    wow.init();
-
-    //===== 
-
-
-
 });
