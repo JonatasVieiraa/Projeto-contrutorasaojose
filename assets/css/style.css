@@ -1711,8 +1711,8 @@ video {
     position: fixed;
     top: 0;
     right: 0;
-    width: 20%;
-    height: 50%;
+    width: 30%;
+    height: 54%;
     background-color: #1c1c1cc9;
     z-index: 999;
     transform: translateX(-100%);
@@ -1764,9 +1764,10 @@ video {
 
   /* Ajustes para o container das redes sociais */
   .socialcontainer {
+    width: 60px;
     height: 80px;
     position: relative;
-    right: 120px;
+    right: 100px;
     bottom: 10px;
   }
 
@@ -2011,7 +2012,7 @@ video {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 36%;
     height: 54%;
     background-color: #1c1c1cc9;
     z-index: 999;
@@ -2056,9 +2057,10 @@ video {
 
   /* Ajustes para o container das redes sociais */
   .socialcontainer {
+    width: 50px;
     height: 80px;
     position: relative;
-    right: 120px;
+    right: 110px;
     bottom: 10px;
   }
 
@@ -2240,7 +2242,7 @@ video {
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 38%;
     height: 53%;
     background-color: #1c1c1cc9;
     z-index: 999;
@@ -2284,9 +2286,10 @@ video {
   }
 
   .socialcontainer {
+    width: 50px;
     height: 80px;
     position: relative;
-    right: 130px;
+    right: 110px;
     bottom: 10px;
   }
 
@@ -2527,6 +2530,7 @@ video {
   }
 
   .socialcontainer {
+    width: 50px;
     height: 80px;
     position: relative;
     right: 130px;
@@ -2727,8 +2731,8 @@ video {
   .navbar-collapse {
     position: absolute;
     top: 0;
-    left: 60%;
-    width: 50%;
+    left: 50%;
+    width: 54%;
     background-color: #1c1c1cc9;
     padding: 0 20px;
     transform: translateX(-100%);
@@ -2771,9 +2775,10 @@ video {
   }
 
   .socialcontainer {
+    width: 50px;
     height: 80px;
     position: relative;
-    right: 130px;
+    right: 120px;
     bottom: 10px;
   }
 
@@ -2984,10 +2989,9 @@ video {
   .navbar-collapse {
     position: absolute;
     top: 0;
-    left: 58%;
-    width: 50%;
+    left: 50%;
+    width: 56%;
     background-color: #1c1c1cc9;
-    padding: 0 20px;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
   }
@@ -3026,11 +3030,11 @@ video {
     animation: fadeInRight 0.5s ease forwards;
     animation-delay: calc(0.1s * var(--item-index));
   }
-
   .socialcontainer {
+    
     height: 80px;
     position: relative;
-    right: 140px;
+    right: 120px;
     bottom: 10px;
   }
 
