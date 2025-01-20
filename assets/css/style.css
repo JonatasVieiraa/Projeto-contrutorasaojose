@@ -844,32 +844,19 @@ video {
   padding: 60px;
 }
 
-.features_carousel {
-  position: relative;
-  overflow: hidden;
-  max-width: 100%;
-
-}
-
-.carousel-container {
-  display: flex;
-  transition: transform var(--carousel-transition);
-}
-
-.carousel-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.carousel-slide img {
+.swiper {
   width: 100%;
-  max-width: 600px;
-  border-radius: var(--carousel-image-radius);
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 .features_content {
