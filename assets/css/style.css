@@ -847,16 +847,25 @@ video {
 .swiper {
   width: 100%;
   height: 100%;
+  
 }
 
 .swiper-slide {
-  background-position: center;
-  background-size: cover;
+  text-align: center;
+  font-size: 18px;
+  background: #1C1C1C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--carousel-image-height);
+ 
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
+  height: 100%;
+  
 }
 
 .features_content {
